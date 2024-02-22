@@ -9,8 +9,8 @@ import { Apollo, gql } from 'apollo-angular';
 })
 export class PersonalInformationFormComponent implements OnInit {
   formData = {
-    name: '',
-    email: ''
+    name: '' as string ,
+    email: '' as string
   };
 
   constructor(private apollo: Apollo) { }
