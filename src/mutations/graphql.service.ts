@@ -13,7 +13,7 @@ export class GraphqlService {
       mutation: gql`
         mutation SubmitForm($name: String!, $email: String!) {
           submitForm(name: $name, email: $email) {
-            success
+            success2
           }
         }
       `,

@@ -9,8 +9,8 @@ import { Apollo, gql } from 'apollo-angular';
 })
 export class PersonalInformationFormComponent implements OnInit {
   formData = {
-    name: '' as string ,
-    email: '' as string
+    name: '' ,
+    email: '' 
   };
 
   constructor(private apollo: Apollo) { }
@@ -32,7 +32,7 @@ export class PersonalInformationFormComponent implements OnInit {
       mutation,
       variables: {
         name: this.formData.name,
-        email: this.formData.email
+        email: this.formData.email as string
       }
     }).subscribe((result: any) => {
       console.log('Form submission result:', result);
