@@ -1,5 +1,5 @@
 import { Component, OnInit,Injectable, inject } from '@angular/core';
-import { Apollo, gql } from 'apollo-angular';
+import { Apollo, ApolloModule, gql } from 'apollo-angular';
 
 
 @Component({
@@ -15,7 +15,7 @@ export class PersonalInformationFormComponent implements OnInit {
 
   constructor(private apollo: Apollo) { }
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+    
   }
 
   submitForm() {
