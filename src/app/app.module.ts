@@ -15,6 +15,6 @@ import { PersonalInformationFormComponent } from './personal-information-form/pe
     FormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [PersonalInformationFormComponent]
 })
 export class AppModule { }
