@@ -8,6 +8,7 @@ import { PersonalInformationFormComponent } from './personal-information-form/pe
 import { ApolloModule } from 'apollo-angular';
 import {provideRouter, RouterModule, Routes} from '@angular/router';
 import { NameListComponent } from './name-list/name-list.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 
 
@@ -15,7 +16,8 @@ import { NameListComponent } from './name-list/name-list.component';
   declarations: [	
     AppComponent,
       PersonalInformationFormComponent,
-      NameListComponent
+      NameListComponent,
+      PageNotFoundComponent
    ],
   imports: [
     BrowserModule,
@@ -23,7 +25,8 @@ import { NameListComponent } from './name-list/name-list.component';
     ApolloModule,
     RouterModule.forRoot(appRoutes, {
       initialNavigation: 'enabledNonBlocking',
-      onSameUrlNavigation: 'reload'
+      onSameUrlNavigation: 'reload',
+      enableTracing: true,
     }),
   ],
   providers: [
