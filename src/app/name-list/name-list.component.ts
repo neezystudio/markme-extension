@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { switchMap } from 'rxjs/operators';
-import { Hero } from '../Hero/hero';
+import { Icons } from '../Icons/Icons';
 
 @Component({
   selector: 'app-name-list',
@@ -9,19 +9,19 @@ import { Hero } from '../Hero/hero';
   styleUrls: ['./name-list.component.scss']
 })
 export class NameListComponent  implements OnInit{
-  heroes$!: Observable<Hero[]>;
+  Iconses$!: Observable<Icons[]>;
   selectedId = 0;
 
   constructor(
-    private service: HeroService,
+    private service: IconsService,
     private route: ActivatedRoute
   ) {}
 
   ngOnInit() {
-    this.heroes$ = this.route.paramMap.pipe(
+    this.Iconses$ = this.route.paramMap.pipe(
       switchMap(params => {
         this.selectedId = parseInt(params.get('id')!, 10);
-        return this.service.getHeroes();
+        return this.service.getIconses();
       })
     );
   }
