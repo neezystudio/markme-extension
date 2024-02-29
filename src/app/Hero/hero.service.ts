@@ -2,9 +2,7 @@ import { Injectable } from '@angular/core';
 
 import { Observable, of } from 'rxjs';
 import { map } from 'rxjs/operators';
-
-import { Icons } from './Icons';
-import { Icons } from './mock.Icons';
+import { Icons } from './mock.icons';
 
 
 
