@@ -1,0 +1,17 @@
+<h2>Icons</h2>
+<ul class="Icons">
+  <li *ngFor="let Icons of Icons$ | async" [class.selected]="Icons.id === selectedId">
+    <a [routerLink]="['/Icons', Icons.id]">
+      <span class="badge">{{ Icons.id }}</span>{{ Icons.name }}
+    </a>
+  </li>
+</ul>
+
+<button type="button" routerLink="/sidekicks">Go to sidekicks</button>
+
+
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+-->
