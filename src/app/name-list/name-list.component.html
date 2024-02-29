@@ -1,6 +1,6 @@
-<h2>Iconses</h2>
-<ul class="Iconses">
-  <li *ngFor="let Icons of Iconses$ | async" [class.selected]="Icons.id === selectedId">
+<h2>Icons</h2>
+<ul class="Icons">
+  <li *ngFor="let Icons of Icons$ | async" [class.selected]="Icons.id === selectedId">
     <a [routerLink]="['/Icons', Icons.id]">
       <span class="badge">{{ Icons.id }}</span>{{ Icons.name }}
     </a>

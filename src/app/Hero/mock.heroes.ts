@@ -1,6 +1,6 @@
-import { Icons } from './Icons';
+import { Icons } from './icon';
 
-export const IconsES: Icons[] = [
+export const Icons: Icons[] = [
   { id: 12, name: 'Dr. Nice' },
   { id: 13, name: 'Bombasto' },
   { id: 14, name: 'Celeritas' },

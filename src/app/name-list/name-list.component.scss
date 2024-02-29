@@ -1,20 +1,20 @@
 /* IconsListComponent's private CSS styles */
-.Iconses {
+.Icons {
     margin: 0 0 2em 0;
     list-style-type: none;
     padding: 0;
     width: 100%;
   }
-  .Iconses li {
+  .Icons li {
     position: relative;
     cursor: pointer;
   }
   
-  .Iconses li:hover {
+  .Icons li:hover {
     left: .1em;
   }
   
-  .Iconses a {
+  .Icons a {
     color: black;
     text-decoration: none;
     display: block;
@@ -25,25 +25,25 @@
     border-radius: 4px;
   }
   
-  .Iconses a:hover {
+  .Icons a:hover {
     color: #2c3a41;
     background-color: #e6e6e6;
   }
   
-  .Iconses a:active {
+  .Icons a:active {
     background-color: #525252;
     color: #fafafa;
   }
   
-  .Iconses .selected a {
+  .Icons .selected a {
     background-color: #d6e6f7;
   }
   
-  .Iconses .selected a:hover {
+  .Icons .selected a:hover {
     background-color: #bdd7f5;
   }
   
-  .Iconses .badge {
+  .Icons .badge {
     padding: .5em .6em;
     color: white;
     background-color: #435b60;

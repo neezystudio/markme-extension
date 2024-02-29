@@ -4,22 +4,22 @@ import { RouterModule, Routes } from '@angular/router';
 import { NameListComponent } from '../name-list/name-list.component';
 import { IconsDetailComponent } from './Icons-detail/Icons-detail.component';
 
-const IconsesRoutes: Routes = [
-  { path: 'Iconses', redirectTo: '/superIconses' },
+const IconsRoutes: Routes = [
+  { path: 'Icons', redirectTo: '/superIcons' },
   { path: 'Icons/:id', redirectTo: '/superIcons/:id' },
-  { path: 'superIconses',  component: NameListComponent, data: { animation: 'names' } },
+  { path: 'superIcons',  component: NameListComponent, data: { animation: 'names' } },
   { path: 'superIcons/:id', component: IconsDetailComponent, data: { animation: 'Icons' } }
 ];
 
 @NgModule({
   imports: [
-    RouterModule.forChild(IconsesRoutes)
+    RouterModule.forChild(IconsRoutes)
   ],
   exports: [
     RouterModule
   ]
 })
-export class IconsesRoutingModule { }
+export class IconsRoutingModule { }
 
 
 /*

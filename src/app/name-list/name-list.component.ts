@@ -9,7 +9,7 @@ import { Icons } from '../Icons/Icons';
   styleUrls: ['./name-list.component.scss']
 })
 export class NameListComponent  implements OnInit{
-  Iconses$!: Observable<Icons[]>;
+  Icons$!: Observable<Icons[]>;
   selectedId = 0;
 
   constructor(
@@ -18,10 +18,10 @@ export class NameListComponent  implements OnInit{
   ) {}
 
   ngOnInit() {
-    this.Iconses$ = this.route.paramMap.pipe(
+    this.Icons$ = this.route.paramMap.pipe(
       switchMap(params => {
         this.selectedId = parseInt(params.get('id')!, 10);
-        return this.service.getIconses();
+        return this.service.getIcons();
       })
     );
   }
