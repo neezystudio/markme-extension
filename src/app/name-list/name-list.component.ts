@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { switchMap } from 'rxjs/operators';
-import { Icons } from '../Icons/Icons';
+import { Icons } from '../Hero/icon';
 
 @Component({
   selector: 'app-name-list',
@@ -13,7 +13,7 @@ export class NameListComponent  implements OnInit{
   selectedId = 0;
 
   constructor(
-    private service: IconsService,
+    private service: Icons,
     private route: ActivatedRoute
   ) {}
 
