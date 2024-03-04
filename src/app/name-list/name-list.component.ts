@@ -13,7 +13,7 @@ export class NameListComponent  implements OnInit{
   selectedId = 0;
 
   constructor(
-    private service: IconsService,
+    private service: Icons,
     private route: ActivatedRoute
   ) {}
 
